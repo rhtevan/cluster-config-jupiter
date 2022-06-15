@@ -12,7 +12,7 @@ spec:
   project: default
   source:
     path: clusters/jupiter/argocd/bootstrap
-    repoURL: https://github.com/gnunn-gitops/cluster-config.git
+    repoURL: https://github.com/rhtevan/cluster-config-jupiter.git
     targetRevision: main
   syncPolicy:
     automated:
