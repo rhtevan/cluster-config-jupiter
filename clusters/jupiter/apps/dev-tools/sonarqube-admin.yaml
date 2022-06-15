@@ -1,0 +1,8 @@
+apiVersion: v1
+data:
+  password: UkBkaGF0MTIzNA==
+kind: Secret
+metadata:
+  name: sonarqube-admin
+  namespace: dev-tools
+type: Opaque

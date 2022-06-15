@@ -1,0 +1,14 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+- github.com/gnunn-gitops/cluster-config/components/apps/dev-tools/overlays/default
+
+patches:
+- patch: |-
+    - op: replace
+      path: /spec/encryptedData/password
+      value: AgAZSfoxevM65j7fR8KGJu/5k/r5rWC5mmGqTSlUzeISZiiZSRLPU/yqOZjWUTsO6ZldF2Q89OhgKGwT0ujpi6oC/0twkh54IGkGnNq7xIx1IWBJ1nIzxV8RZAEg/vsrs9Fk4tnUrwfAX4ywJsbHJB2rBGoFWXgC06sLExjjt7wLTSrwxuieLQa7Qhhf0V2cP9UbsmycLYR0uPgJTyUOa2M1xmobv+b7CrKczBv/1E8CBuunGthb7+cZLETwl5scXMpD2H5AUhKOhLghn17vanAUjGsrmnIW2m4BwN28utbbU+G7LemmTNVnJak1l9w1uWDljwMZTriZgj9ZH3xCh+1ePgkziQHOYHSdPwdZNy+gWx7R8qpP5apadp4Xk/TEZFJ2w+Txcmo88OGtUPTpIXJ4UZt6OlfcvaT/v0xa8TJsm2/YSbZ4WU2udNW+peQJAak0Arn/xS9oxuPgVgyDpCtub42cpO3eIVBKiUKvkjMeDMhS3jGwwT1O1tOGn9WSCefQCxHZfZZpZ8I+peKSqJKw4Lfx8yJMTiSv75u0PEBnF0XxztBaQ9gIrra8HmSJ5kYlbBjyAgf12rjK8HUtpVMdiwAH9hM2LG/h0dAu4j21dFj3ONwWDGKiKYpvOkWmnlAX2C4jdFs39hFeNUjT768KvyZ21Yztc6Yrg03Nxz7YgvoTg3d1/f2Z5/Gfresx23YMgEjap9JPdNgd
+  target:
+    kind: SealedSecret
+    name: sonarqube-admin 
