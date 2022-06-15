@@ -72,7 +72,8 @@ applications:
     destination:
       namespace: dev-tools
     source:
-      path: components/apps/dev-tools/overlays/default
+      path: clusters/jupiter/apps/dev-tools
+      repoURL: https://github.com/rhtevan/cluster-config-jupiter
 
   groups-and-membership:
     annotations:
