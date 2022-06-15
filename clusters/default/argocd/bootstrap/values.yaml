@@ -94,7 +94,8 @@ applications:
     destination:
       namespace: openshift-operators
     source:
-      path: components/apps/pipelines-operator/overlays/chains
+      path: openshift-pipelines-operator/overlays/latest
+      repoURL: https://github.com/redhat-cop/gitops-catalog
     syncPolicyRetry:
       limit: 5
       backoff:
