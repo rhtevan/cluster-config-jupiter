@@ -1,0 +1,20 @@
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  creationTimestamp: null
+  name: htpass-secret
+  namespace: openshift-config
+spec:
+  encryptedData:
+    htpasswd: AgBps1L1U4Ah6Tq3B7korsP08AIkKdH5MIp5f16OM5lbLqkIZaGjfalmxhpaeHdUZVbYg33wIzSrSoPfXAc/Wn2jsr+wXLKjsqLuHK8cFnQ1KlBpG1gEmfovY/NQTJ63pq1r2WCFTMebR/enuKKRj1c5nPoSYbdj54SrMyL5om+/oOPh3IwacYKlgq6rvpVv/+GMlz7paFVVtu8792pCBJAyAx/yVap9y0zjogRuEJP/tKlKb5ixNIzc4R4J3U8/2gFEDr6w9iKOF3DRv8dMae8VZWk4rneEGNL36UVWJwyE1SFUVYadeAm7CVyLeiIvntjKuK0KXEXf4vwOT4asSiSlhzO/lsaP07nqIAEhmzOVzUp7wUirxzplHse0QMfaRli2cuwtpMiSNlk5LmOeco9RIZqXt6hSr1u6GbpZPYUTp9z+dlC5w2avcSLPaC9F/gPWKQ+aUqEDy43u5b0ZtcZxn+/inAX6zNmTESSKfi1VQ1lnzFLYYYRAQZl5NBehqK3kVAeWwy36uTpuCmVWNGm8969wM2mGQ/NOCTISTeArZUcSPPEKtKl8HmDfDIdzR84DrvcPjh5r2JN5DgXGU/kcJBWyWlSUKX4rts8SE3qZDKf3V7GrqEQMvJj9RK+cECmvwSZCJVBCv7gOnqFxrjtQmuuz7AqQc3sGpobEqPBb7M5bRGlsmsJnhpR6LYZTHFfLqDScJuJanSMb/ozq8YZo/UyEg5MINPDaThpZnYTn2H6yab0X39vLJBXu6/qTTF6bv22poBVAuKESfkNq1esI+QRAqxCI3TYMEOiIsnbtaLszOMjinBS3Wj0ndbqCSUt2CjBVNzgR/ZHg+2gJSh28hgtoJtOUohWaMBR8hmSKMtjHxgkW+piXxscTNwkAEb5Sj++BhSN3lrUfOjAJvOU733MLNnXT8DpxZHRWPC4lrKnroEJHDPJiSftNH2yGHJno1s+kXTrov9js4/vM6zW9M4Yb3wN8B55Dww0XNLbxj/cWtJvT/Zw8IAMmhl9kOC+OVLG5Yt4Fc17k24/CEpqpOzBexJByGER+zsy8FQAa2QZZ9lisvgziisTrbhlDP1F8nDoELUnVJy2oQjX0lylys6H4PuJiIn6ib3rlEm2rj7EJ
+  template:
+    data: null
+    metadata:
+      annotations:
+        argocd.argoproj.io/compare-options: IgnoreExtraneous
+        argocd.argoproj.io/sync-options: Prune=false
+      creationTimestamp: null
+      name: htpass-secret
+      namespace: openshift-config
+    type: Opaque
+

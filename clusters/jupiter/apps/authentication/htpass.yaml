@@ -1,0 +1,11 @@
+apiVersion: v1
+data:
+  htpasswd: dXNlcjU6JGFwcjEkMU1mNGY3RDIka095VXFNVnNoYVhIdzVQeWtTUEpBLwpwcm9kdWN0Y2F0YWxvZ2FkbWluOiRhcHIxJHlwZWpGVWlNJHlDMU9INWczVXZrVVZXbHd1aW4uQy4KdXNlcjQ6JGFwcjEkT1NRMFJQT0ckMFZzdHBDcWZCL1VKbnhIeUllSFZrMAp1c2VyMzokYXByMSQ5aTliamhBaiRoMnRaWDdFay42R1JXZ1I3OVpkSWIwCnVzZXIyOiRhcHIxJHE1VzhPZzRpJGQ1R292R0VMRE5wTnRqekw1Y2JNSzAKdXNlcjE6JGFwcjEkZ3Q3UXpnSXEkR2FRUUFxcmJXb293ODQxS3BxRkl6MAphZG1pbjokYXByMSRBRFhDZ1pDdSRPVDBHbTVjWlM5UXFXR2pMdmRYYXYuCg==
+kind: Secret
+metadata:
+  annotations:
+    argocd.argoproj.io/compare-options: IgnoreExtraneous
+    argocd.argoproj.io/sync-options: Prune=false
+  name: htpass-secret
+  namespace: openshift-config
+type: Opaque
